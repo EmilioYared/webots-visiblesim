@@ -1,0 +1,68 @@
+#VRML_SIM R2025a utf8
+# Catom3D variant WITH physics (mass + bounding object) for Phase 2 structural
+# testing. Identical to Catom3D otherwise. The controller keeps the *moving*
+# catom kinematic (resetPhysics each step); idle catoms are dynamic and rest on
+# the terrain / each other under gravity.
+
+PROTO Catom3DPhysics [
+  field SFVec3f    translation  0 0 0
+  field SFRotation rotation     0 1 0 0
+  field SFString   controller   "catom3d_controller"
+  field SFString   name         "catom3d"
+  field SFColor    color        0.2 0.4 0.8
+  field SFFloat    mass         0.1
+]
+{
+  Robot {
+    translation IS translation
+    rotation    IS rotation
+    name        IS name
+    controller  IS controller
+    supervisor  TRUE
+
+    children [
+      # OBJ is in VisibleSim units (±5). Scale 0.01 -> ±0.05 m radius.
+      Transform {
+        scale 0.01 0.01 0.01
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor IS color
+              roughness 0.4
+              metalness 0.15
+            }
+            geometry Mesh {
+              url "meshes/catom3DV2.obj"
+            }
+          }
+        ]
+      }
+
+      GPS {
+        name "gps"
+        accuracy 0.0
+      }
+
+      Emitter {
+        name "emitter"
+        range 1.0
+        channel 1
+      }
+
+      Receiver {
+        name "receiver"
+        channel 1
+      }
+    ]
+
+    # Catom radius is 0.05 m -> bounding sphere of the same radius.
+    boundingObject Sphere {
+      radius 0.05
+      subdivision 2
+    }
+    physics Physics {
+      density -1
+      mass IS mass
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "name": "Webots Windows",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "C:/Program Files/Webots/include/controller/cpp",
+        "C:/Program Files/Webots/include/controller/c"
+      ],
+      "defines": [
+        "_WIN32",
+        "UNICODE"
+      ],
+      "compilerPath": "C:/Program Files/Webots/msys64/mingw64/bin/g++.exe",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-x64"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,57 @@
+#VRML_SIM R2025a utf8
+
+PROTO Catom3D [
+  field SFVec3f    translation  0 0 0
+  field SFRotation rotation     0 1 0 0
+  field SFString   controller   "catom3d_controller"
+  field SFString   name         "catom3d"
+  field SFColor    color        0.2 0.4 0.8
+]
+{
+  Robot {
+    translation IS translation
+    rotation    IS rotation
+    name        IS name
+    controller  IS controller
+    supervisor  TRUE
+
+    # No physics block: catoms are moved kinematically by the Supervisor API.
+    # Adding a physics body would cause the engine to fight against our
+    # position-setting every step, producing the "physics step failed" warnings.
+
+    children [
+      # OBJ is in VisibleSim units (±5). Scale 0.01 → ±0.05 m radius.
+      Transform {
+        scale 0.01 0.01 0.01
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor IS color
+              roughness 0.4
+              metalness 0.15
+            }
+            geometry Mesh {
+              url "meshes/catom3DV2.obj"
+            }
+          }
+        ]
+      }
+
+      GPS {
+        name "gps"
+        accuracy 0.0
+      }
+
+      Emitter {
+        name "emitter"
+        range 1.0
+        channel 1
+      }
+
+      Receiver {
+        name "receiver"
+        channel 1
+      }
+    ]
+  }
+}
