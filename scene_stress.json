@@ -1,0 +1,53 @@
+{
+  "world": {
+    "title": "Catom3D Cantilever Stress Demo (generated from scene_stress.json)",
+    "basicTimeStep": 8,
+    "gravity": 9.81
+  },
+
+  "floor": {
+    "enabled": true,
+    "autoFit": true,
+    "margin": 0.15
+  },
+
+  "module": {
+    "physicsEnabled": true,
+    "mass": 0.1,
+    "boundingRadius": 0.05
+  },
+
+  "contact": {
+    "coulombFriction": 0.8,
+    "bounce": 0.0,
+    "rollingFriction": 0.05
+  },
+
+  "bonds": {
+    "enabled": true,
+    "tensileStrength": 6.0,
+    "shearStrength": 4.0
+  },
+
+  "scenario": {
+    "type": "cantilever",
+    "baseW": 2,
+    "baseD": 2,
+    "baseH": 3,
+    "armLength": 8,
+    "x0": 5,
+    "y0": 1
+  },
+
+  "analysis": {
+    "analyst": "m0",
+    "everyNSteps": 8,
+    "colorByRisk": true
+  },
+
+  "output": {
+    "proto": "protos/Catom3DStress.proto",
+    "world": "worlds/catom3d_stress.wbt",
+    "protoName": "Catom3DStress"
+  }
+}

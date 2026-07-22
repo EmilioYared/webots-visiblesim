@@ -1,0 +1,62 @@
+#VRML_SIM R2025a utf8
+# GENERATED FILE - do not edit.
+# Produced by tools/gen_world.cpp from tools/.build/nobonds_scene.json.
+# Change the physics there and re-run tools/gen_world.exe.
+
+PROTO NoBonds [
+  field SFVec3f    translation    0 0 0
+  field SFRotation rotation       0 1 0 0
+  field SFString   controller     "catom3d_controller"
+  field MFString   controllerArgs []
+  field SFString   name           "catom3d"
+  field SFColor    color          0.2 0.4 0.8
+  field SFFloat    mass           0.1
+]
+{
+  Robot {
+    translation IS translation
+    rotation    IS rotation
+    name        IS name
+    controller  IS controller
+    controllerArgs IS controllerArgs
+    supervisor  TRUE
+    contactMaterial "catom"
+
+    children [
+      # OBJ is in VisibleSim units (+-5); scale to a 0.05 m radius.
+      Transform {
+        scale 0.01 0.01 0.01
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor IS color
+              roughness 0.4
+              metalness 0.15
+            }
+            geometry Mesh {
+              url "meshes/catom3DV2.obj"
+            }
+          }
+        ]
+      }
+
+      GPS {
+        name "gps"
+        accuracy 0.0
+      }
+
+      Emitter {
+        name "emitter"
+        range 1.0
+        channel 1
+      }
+
+      Receiver {
+        name "receiver"
+        channel 1
+      }
+    ]
+
+    # module.physicsEnabled = false -> kinematic module
+  }
+}

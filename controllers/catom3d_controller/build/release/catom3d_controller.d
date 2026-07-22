@@ -8,4 +8,5 @@ build/release/catom3d_controller.o: catom3d_controller.cpp \
  C:/Program\ Files/Webots/include/controller/c/webots/contact_point.h \
  C:\Program\ Files\Webots/include/controller/cpp/webots/Robot.hpp \
  C:\Program\ Files\Webots/include/controller/cpp/webots/GPS.hpp \
- catom3d_core.hpp
+ C:\Program\ Files\Webots/include/controller/cpp/webots/Connector.hpp \
+ catom3d_core.hpp scene_config.hpp json_min.hpp

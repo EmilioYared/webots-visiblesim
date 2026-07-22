@@ -1,0 +1,11 @@
+{
+  "world": { "basicTimeStep": 4, "gravity": [0, 0, -1.62] },
+  "module": { "mass": 0.42, "boundingRadius": 0.07,
+                "linearDamping": 0.55, "angularDamping": 0.66 },
+  "contact": { "coulombFriction": 0.25, "bounce": 0.4 },
+  "bonds": { "tensileStrength": 99.0, "shearStrength": 88.0 },
+  "floor": { "margin": 0.5 },
+  "output": { "proto": "tools/.build/VariantCatom.proto",
+                "world": "tools/.build/variant_world.wbt",
+                "protoName": "VariantCatom" }
+}

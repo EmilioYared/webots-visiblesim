@@ -435,6 +435,11 @@ static int oriFromMat(const Mat4& M) {
 struct Move {
     long long t_us;
     GridPos init, from, to, pivot;
+    // Optional resolved-arc hint (columns 15-16 of the trace): which motion link
+    // to use, disambiguating rotations that reach the same target cell via
+    // different swept paths. -1 = unresolved (fall back to landing-only search).
+    // See tools/resolve_trace / tools/check_collisions --emit.
+    int linkTo = -1, linkFace = -1;
 };
 
 // Load trace.csv, keeping only the moves whose initial cell is myInit, sorted by time.
@@ -450,17 +455,18 @@ static std::vector<Move> loadTraceFrom(const char* path, const GridPos* myInit) 
         if (line.empty()) continue;
         std::istringstream ss(line);
         std::string tok;
-        long long v[14]; int k = 0;
-        while (k < 14 && std::getline(ss, tok, ',')) {
-            try { v[k++] = std::stoll(tok); } catch (...) { k = 0; break; }
+        long long v[16]; int k = 0;
+        while (k < 16 && std::getline(ss, tok, ',')) {
+            try { v[k] = std::stoll(tok); ++k; } catch (...) { break; }
         }
-        if (k < 14) continue;
+        if (k < 14) continue;                 // 14 required; 16 adds the arc hint
         Move m;
         m.t_us  = v[0];
         m.init  = {(int)v[2],  (int)v[3],  (int)v[4]};
         m.from  = {(int)v[5],  (int)v[6],  (int)v[7]};
         m.to    = {(int)v[8],  (int)v[9],  (int)v[10]};
         m.pivot = {(int)v[11], (int)v[12], (int)v[13]};
+        if (k >= 16) { m.linkTo = (int)v[14]; m.linkFace = (int)v[15]; }
         if (!myInit || m.init == *myInit) out.push_back(m);
     }
     std::sort(out.begin(), out.end(),
@@ -471,8 +477,14 @@ static std::vector<Move> loadTraceFrom(const char* path, const GridPos* myInit) 
 // Find the rotation link that takes myMat onto toCell, rolling around pivotCell.
 // buildRotationAnim uses only the pivot POSITION, so the pivot orientation is
 // irrelevant.  Returns false if no link lands on the target.
+//
+// When a resolved-arc hint is supplied (linkTo/linkFace >= 0, from the trace)
+// the specific link is used, so rotations that reach the same cell via
+// different swept paths are disambiguated exactly as resolved offline. Several
+// links may share (from,to); linkFace picks the intended one. Without a hint —
+// or if the hint fails to land — it falls back to the nearest-landing link.
 static bool findAnimForMove(const Mat4& myMat, GridPos pivotCell, GridPos toCell,
-                            RotationAnim& out)
+                            RotationAnim& out, int linkTo = -1, int linkFace = -1)
 {
     double pivW[3]; gridToWorld(pivotCell, pivW);
     double tgtW[3]; gridToWorld(toCell, tgtW);
@@ -481,6 +493,18 @@ static bool findAnimForMove(const Mat4& myMat, GridPos pivotCell, GridPos toCell
     if (con < 0) return false;
 
     Mat4 pivMat; pivMat.setTranslation(pivW[0], pivW[1], pivW[2]);
+
+    if (linkTo >= 0) {
+        for (const MotionLink& lnk : g_links) {
+            if (lnk.from != con || lnk.to != linkTo) continue;
+            if (linkFace >= 0 && (int)lnk.faceType != linkFace) continue;
+            RotationAnim anim = buildRotationAnim(myMat, pivMat, lnk);
+            Vec3 fp = anim.finalMat.getPosition();
+            double dx=fp[0]-tgtW[0], dy=fp[1]-tgtW[1], dz=fp[2]-tgtW[2];
+            if (dx*dx+dy*dy+dz*dz < 0.002) { out = anim; return true; }
+        }
+        // Hint did not resolve (stale trace?) — fall back to the search below.
+    }
 
     double best = std::numeric_limits<double>::max();
     bool found = false;
@@ -511,6 +535,11 @@ static bool findAnimForMove(const Mat4& myMat, GridPos pivotCell, GridPos toCell
 struct StructuralReport {
     int modules=0, components=0, articulation=0, supported=0, overhanging=0;
     double comX=0, comY=0; bool comInSupport=true;
+    // Per-module classification, indexed parallel to the cells passed to
+    // analyzeStructure — drives the live risk colouring in Webots.
+    std::vector<bool> cellArticulation;   // true = single-point-of-failure
+    std::vector<bool> cellOverhang;       // true = no support directly beneath
+    std::vector<int>  cellComponent;      // connected-component id (1-based)
 };
 
 // A connector is "down-pointing" if its FCC offset has dz < 0 (used for support).
@@ -563,9 +592,12 @@ static StructuralReport analyzeStructure(const std::vector<GridPos>& cells) {
         if(parent==-1 && children>1) ap[u]=true;
     };
     for(int i=0;i<(int)cells.size();++i) if(!disc[i]) dfs(i,-1);
-    for(int i=0;i<(int)cells.size();++i) if(ap[i]) r.articulation++;
+    r.cellArticulation.assign(cells.size(), false);
+    r.cellComponent = comp;
+    for(int i=0;i<(int)cells.size();++i) if(ap[i]) { r.articulation++; r.cellArticulation[i]=true; }
 
     // support / overhang + centre of mass over base footprint
+    r.cellOverhang.assign(cells.size(), false);
     int minz=cells[0].z; for(auto&c:cells) minz=std::min(minz,c.z);
     double sx=0,sy=0, bxmin=1e9,bxmax=-1e9,bymin=1e9,bymax=-1e9;
     for(int i=0;i<(int)cells.size();++i){
@@ -573,7 +605,7 @@ static StructuralReport analyzeStructure(const std::vector<GridPos>& cells) {
         bool sup = (cells[i].z==minz);
         if(!sup) for(int c=0;c<12;++c)
             if(isDownConnector(cells[i],c) && find(fccNeighbor(cells[i],c))>=0){sup=true;break;}
-        if(sup) r.supported++; else r.overhanging++;
+        if(sup) r.supported++; else { r.overhanging++; r.cellOverhang[i]=true; }
         if(cells[i].z==minz){bxmin=std::min(bxmin,w[0]);bxmax=std::max(bxmax,w[0]);
                              bymin=std::min(bymin,w[1]);bymax=std::max(bymax,w[1]);}
     }

@@ -1,0 +1,74 @@
+{
+  "world": {
+    "title": "Catom3D Sheet Walk - PHYSICS (generated from scene.json)",
+    "basicTimeStep": 8,
+    "gravity": 9.81,
+    "CFM": 0.00001,
+    "ERP": 0.2,
+    "physicsDisableTime": 1.0,
+    "physicsDisableLinearThreshold": 0.01,
+    "physicsDisableAngularThreshold": 0.01
+  },
+
+  "floor": {
+    "enabled": true,
+    "autoFit": true,
+    "margin": 0.15,
+    "thickness": 0.01,
+    "topZAuto": true,
+    "contactMaterial": "floor"
+  },
+
+  "module": {
+    "physicsEnabled": true,
+    "mass": 0.1,
+    "boundingRadius": 0.05,
+    "linearDamping": 0.2,
+    "angularDamping": 0.2,
+    "contactMaterial": "catom"
+  },
+
+  "contact": {
+    "coulombFriction": 0.8,
+    "bounce": 0.0,
+    "bounceVelocity": 0.01,
+    "rollingFriction": 0.05,
+    "forceDependentSlip": 0.0,
+    "softCFM": 0.00001,
+    "softERP": 0.2,
+    "maxContactJoints": 10
+  },
+
+  "bonds": {
+    "enabled": true,
+    "tensileStrength": 15.0,
+    "shearStrength": 10.0,
+    "distanceTolerance": 0.02,
+    "axisTolerance": 0.3,
+    "rotationTolerance": 0.4,
+    "numberOfRotations": 0
+  },
+
+  "algorithm": {
+    "movingCatomRadius": 2
+  },
+
+  "playback": {
+    "usPerStep": 10000,
+    "trace": "trace_resolved.csv"
+  },
+
+  "analysis": {
+    "analyst": "r0c0",
+    "everyNSteps": 8,
+    "placedTolerance": 0.02,
+    "metricsCsv": "structural_metrics.csv"
+  },
+
+  "output": {
+    "proto": "protos/Catom3DPhysics.proto",
+    "world": "worlds/catom3d_world_physics.wbt",
+    "protoName": "Catom3DPhysics",
+    "controller": "catom3d_controller"
+  }
+}

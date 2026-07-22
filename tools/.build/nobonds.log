@@ -1,0 +1,8 @@
+config: tools/.build/nobonds_scene.json
+trace:  controllers/catom3d_controller/trace.csv (121 moves, 20 modules)
+  structure: components=1 articulation=0 supported=20 overhanging=0 CoM-in-support=yes
+wrote tools/.build/NoBonds.proto (no bonds)
+wrote tools/.build/nobonds_world.wbt
+  modules       20 (physics off, mass 0.1 kg, r 0.05 m)
+  bonds         off
+  analyst       r0c0

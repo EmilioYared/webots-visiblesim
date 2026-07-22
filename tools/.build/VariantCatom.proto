@@ -1,16 +1,16 @@
 #VRML_SIM R2025a utf8
 # GENERATED FILE - do not edit.
-# Produced by tools/gen_world.cpp from scene.json.
+# Produced by tools/gen_world.cpp from tools/.build/variant_scene.json.
 # Change the physics there and re-run tools/gen_world.exe.
 
-PROTO Catom3DPhysics [
+PROTO VariantCatom [
   field SFVec3f    translation    0 0 0
   field SFRotation rotation       0 1 0 0
   field SFString   controller     "catom3d_controller"
   field MFString   controllerArgs []
   field SFString   name           "catom3d"
   field SFColor    color          0.2 0.4 0.8
-  field SFFloat    mass           0.1
+  field SFFloat    mass           0.42
 ]
 {
   Robot {
@@ -23,9 +23,9 @@ PROTO Catom3DPhysics [
     contactMaterial "catom"
 
     children [
-      # OBJ is in VisibleSim units (+-5); scale to a 0.05 m radius.
+      # OBJ is in VisibleSim units (+-5); scale to a 0.07 m radius.
       Transform {
-        scale 0.01 0.01 0.01
+        scale 0.014 0.014 0.014
         children [
           Shape {
             appearance PBRAppearance {
@@ -65,7 +65,7 @@ PROTO Catom3DPhysics [
       # cannot be grabbed by the modules it passes.
       # Bonds break above tensileStrength/shearStrength (-1 = never).
       Connector {
-        translation 0.05 0 0
+        translation 0.07 0 0
         rotation 0 1 0 1.57079633
         name "con0"
         model "catom"
@@ -79,11 +79,11 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 99
+        shearStrength 88
       }
       Connector {
-        translation 0 0.05 0
+        translation 0 0.07 0
         rotation -1 0 0 1.57079633
         name "con1"
         model "catom"
@@ -97,11 +97,11 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 99
+        shearStrength 88
       }
       Connector {
-        translation 0.025 0.025 0.0353553391
+        translation 0.035 0.035 0.0494974747
         rotation -0.707106781 0.707106781 0 0.785398163
         name "con2"
         model "catom"
@@ -115,11 +115,11 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 99
+        shearStrength 88
       }
       Connector {
-        translation -0.025 0.025 0.0353553391
+        translation -0.035 0.035 0.0494974747
         rotation -0.707106781 -0.707106781 0 0.785398163
         name "con3"
         model "catom"
@@ -133,11 +133,11 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 99
+        shearStrength 88
       }
       Connector {
-        translation -0.025 -0.025 0.0353553391
+        translation -0.035 -0.035 0.0494974747
         rotation 0.707106781 -0.707106781 0 0.785398163
         name "con4"
         model "catom"
@@ -151,11 +151,11 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 99
+        shearStrength 88
       }
       Connector {
-        translation 0.025 -0.025 0.0353553391
+        translation 0.035 -0.035 0.0494974747
         rotation 0.707106781 0.707106781 0 0.785398163
         name "con5"
         model "catom"
@@ -169,11 +169,11 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 99
+        shearStrength 88
       }
       Connector {
-        translation -0.05 0 0
+        translation -0.07 0 0
         rotation 0 -1 0 1.57079633
         name "con6"
         model "catom"
@@ -187,11 +187,11 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 99
+        shearStrength 88
       }
       Connector {
-        translation 0 -0.05 0
+        translation 0 -0.07 0
         rotation 1 0 0 1.57079633
         name "con7"
         model "catom"
@@ -205,11 +205,11 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 99
+        shearStrength 88
       }
       Connector {
-        translation -0.025 -0.025 -0.0353553391
+        translation -0.035 -0.035 -0.0494974747
         rotation 0.707106781 -0.707106781 0 2.35619449
         name "con8"
         model "catom"
@@ -223,11 +223,11 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 99
+        shearStrength 88
       }
       Connector {
-        translation 0.025 -0.025 -0.0353553391
+        translation 0.035 -0.035 -0.0494974747
         rotation 0.707106781 0.707106781 0 2.35619449
         name "con9"
         model "catom"
@@ -241,11 +241,11 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 99
+        shearStrength 88
       }
       Connector {
-        translation 0.025 0.025 -0.0353553391
+        translation 0.035 0.035 -0.0494974747
         rotation -0.707106781 0.707106781 0 2.35619449
         name "con10"
         model "catom"
@@ -259,11 +259,11 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 99
+        shearStrength 88
       }
       Connector {
-        translation -0.025 0.025 -0.0353553391
+        translation -0.035 0.035 -0.0494974747
         rotation -0.707106781 -0.707106781 0 2.35619449
         name "con11"
         model "catom"
@@ -277,21 +277,21 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 99
+        shearStrength 88
       }
     ]
 
     boundingObject Sphere {
-      radius 0.05
+      radius 0.07
       subdivision 2
     }
     physics Physics {
       density -1
       mass IS mass
       damping Damping {
-        linear 0.2
-        angular 0.2
+        linear 0.55
+        angular 0.66
       }
     }
   }

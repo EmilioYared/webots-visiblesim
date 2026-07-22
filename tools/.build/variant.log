@@ -1,0 +1,10 @@
+WARNING: world.gravity must be a number (magnitude along the down axis), not an array - using 9.810000
+config: tools/.build/variant_scene.json
+trace:  controllers/catom3d_controller/trace.csv (121 moves, 20 modules)
+  structure: components=1 articulation=0 supported=20 overhanging=0 CoM-in-support=yes
+wrote tools/.build/VariantCatom.proto (12 bonds/module)
+wrote tools/.build/variant_world.wbt
+  modules       20 (physics on, mass 0.42 kg, r 0.07 m)
+  bonds         on, tensile 99.000000 N / shear 88.000000 N
+  floor         2.04 x 1.49 m, top at z=0.106777 (auto-fitted)
+  analyst       r0c0

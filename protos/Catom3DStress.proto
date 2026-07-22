@@ -1,9 +1,9 @@
 #VRML_SIM R2025a utf8
 # GENERATED FILE - do not edit.
-# Produced by tools/gen_world.cpp from scene.json.
+# Produced by tools/gen_world.cpp from scene_stress.json.
 # Change the physics there and re-run tools/gen_world.exe.
 
-PROTO Catom3DPhysics [
+PROTO Catom3DStress [
   field SFVec3f    translation    0 0 0
   field SFRotation rotation       0 1 0 0
   field SFString   controller     "catom3d_controller"
@@ -79,8 +79,8 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 6
+        shearStrength 4
       }
       Connector {
         translation 0 0.05 0
@@ -97,8 +97,8 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 6
+        shearStrength 4
       }
       Connector {
         translation 0.025 0.025 0.0353553391
@@ -115,8 +115,8 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 6
+        shearStrength 4
       }
       Connector {
         translation -0.025 0.025 0.0353553391
@@ -133,8 +133,8 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 6
+        shearStrength 4
       }
       Connector {
         translation -0.025 -0.025 0.0353553391
@@ -151,8 +151,8 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 6
+        shearStrength 4
       }
       Connector {
         translation 0.025 -0.025 0.0353553391
@@ -169,8 +169,8 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 6
+        shearStrength 4
       }
       Connector {
         translation -0.05 0 0
@@ -187,8 +187,8 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 6
+        shearStrength 4
       }
       Connector {
         translation 0 -0.05 0
@@ -205,8 +205,8 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 6
+        shearStrength 4
       }
       Connector {
         translation -0.025 -0.025 -0.0353553391
@@ -223,8 +223,8 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 6
+        shearStrength 4
       }
       Connector {
         translation 0.025 -0.025 -0.0353553391
@@ -241,8 +241,8 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 6
+        shearStrength 4
       }
       Connector {
         translation 0.025 0.025 -0.0353553391
@@ -259,8 +259,8 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 6
+        shearStrength 4
       }
       Connector {
         translation -0.025 0.025 -0.0353553391
@@ -277,8 +277,8 @@ PROTO Catom3DPhysics [
         axisTolerance 0.3
         rotationTolerance 0.4
         numberOfRotations 0
-        tensileStrength 15
-        shearStrength 10
+        tensileStrength 6
+        shearStrength 4
       }
     ]
 

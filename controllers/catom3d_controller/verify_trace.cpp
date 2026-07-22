@@ -57,7 +57,7 @@ int main(int argc, char** argv) {
             }
 
             RotationAnim anim;
-            if (!findAnimForMove(myMat, m.pivot, m.to, anim)) {
+            if (!findAnimForMove(myMat, m.pivot, m.to, anim, m.linkTo, m.linkFace)) {
                 noLink++; moduleOK = false;
                 std::cerr << "module(" << init.x << "," << init.y << "," << init.z
                           << "): no link from (" << myGrid.x << "," << myGrid.y << ","

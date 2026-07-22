@@ -1,0 +1,6 @@
+{ "bonds": { "enabled": false },
+  "module": { "physicsEnabled": false },
+  "floor": { "enabled": false },
+  "output": { "proto": "tools/.build/NoBonds.proto",
+                "world": "tools/.build/nobonds_world.wbt",
+                "protoName": "NoBonds" } }
