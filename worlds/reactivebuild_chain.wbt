@@ -1,0 +1,2736 @@
+#VRML_SIM R2025a utf8
+# GENERATED FILE - do not edit.
+# Produced by reactivebuild/viz_webots/export_wbt.py from a grown structure.
+# Static view only (no ODE dynamics): ReactiveBuild statics come from the
+# C++ truss FEM, which ODE cannot reproduce. See reactivebuild/RESULTS.md.
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+
+WorldInfo {
+  title "reactivebuild_chain"
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation 0.950394 0.161515 0.265828 1.137643
+  position 155.3029 -437.9339 46.4418
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Solid {
+  translation -3.780 -1.501 -0.0100
+  children [
+    Shape {
+      appearance PBRAppearance { baseColor 0.55 0.55 0.58 roughness 1 metalness 0 }
+      geometry Box { size 7.561 13.302 0.0200 }
+    }
+  ]
+  name "ground"
+}
+Solid {
+  children [
+    Pose {
+      translation -0.8463 0.3210 2.7052
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation -1.5608 -1.3246 1.8212
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation -0.0307 -0.3324 1.0000
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.1051 -1.1745 -0.8090
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.533 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.1875 -2.7184 -1.4761
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.533 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.0378 -1.6817 -2.7424
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.533 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.7354 -1.3018 -5.6779
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.705 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.0267 -1.7523 -4.7412
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.705 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.0586 -1.5758 -6.7331
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.705 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.3952 -1.2400 -10.6780
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.877 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.1514 -1.3075 -9.7235
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.877 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.4459 -1.4779 -8.6928
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.877 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.1304 -0.8190 -12.6151
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.852 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.1205 -0.6919 -14.6111
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.852 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.8401 -0.5104 -13.6060
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.852 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.6672 -0.3864 -18.5422
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.680 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.2675 -0.6867 -16.6057
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.680 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.8666 0.3883 -17.1417
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.680 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.6499 -0.3001 -20.5402
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.508 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.2134 -1.9625 -21.4988
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.508 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.4705 -0.4173 -22.5287
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.508 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.6253 -0.4133 -24.5227
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.386 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.5070 -0.2687 -26.5140
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.386 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.0527 -1.2167 -25.6703
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.386 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.5458 -0.3578 -28.5116
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.558 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.7070 -0.3008 -30.5043
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.558 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.4184 -1.8696 -29.4879
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.558 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.9999 0.9469 -33.4775
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.730 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.8073 -0.2900 -34.5011
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.730 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.8084 -0.3290 -32.5015
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.730 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.8124 -0.5409 -38.4927
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.902 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.8415 -0.4149 -36.4969
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.902 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.2539 -2.1536 -37.3953
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.902 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.0851 -0.3877 -40.3495
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.826 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.0832 -0.5398 -42.3437
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.826 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.4924 -1.4693 -41.2713
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.826 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.7921 -2.2840 -45.1596
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.655 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.4477 -1.1434 -44.2153
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.655 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.3454 -1.3750 -46.1992
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.655 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.4216 -0.4458 -48.8643
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.483 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.7768 -1.3328 -48.1517
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.483 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.0777 -1.2219 -50.1258
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.483 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.6315 -0.0622 -53.0749
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.411 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.1932 -1.0687 -52.1166
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.411 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.0853 -0.8132 -54.0973
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.411 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.0071 0.5677 -57.1016
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.583 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.0739 -0.7935 -56.0971
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.583 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.2423 -0.6595 -58.0855
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.583 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.3120 0.6534 -61.1744
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.755 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.2384 -0.6355 -60.0854
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.755 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.2405 -0.7715 -62.0807
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.755 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.6581 -0.5067 -65.1376
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.927 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.9701 -1.0577 -66.0580
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.927 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.0294 -0.9436 -64.0621
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.927 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.9391 -1.2115 -68.0518
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.801 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.0960 -0.9708 -70.0311
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.801 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.0069 -2.8104 -69.2514
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.801 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.6230 -0.7302 -73.9589
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.630 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.0027 0.9159 -72.8884
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.630 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.1245 -0.8859 -72.0291
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.630 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.2989 -0.2912 -77.9140
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.458 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.7609 1.2661 -76.7472
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.458 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.3396 -0.5082 -75.9262
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.458 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.4147 -0.0885 -79.9003
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.436 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.1801 0.5648 -80.5760
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.436 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.6890 0.2054 -81.8595
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.436 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.0341 0.4531 -85.7434
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.608 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.2247 0.5523 -83.7549
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.608 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.7644 -0.0541 -84.8781
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.608 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.8476 -0.3538 -89.5964
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.780 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.1774 -1.4776 -88.6121
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.780 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.9315 -0.2851 -87.5993
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.780 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.9256 -0.2277 -91.5909
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.948 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.9967 -0.1160 -93.5865
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.948 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.8746 -1.8988 -92.6884
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.948 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.1304 1.3315 -96.3516
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.776 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.1585 -0.3783 -97.3888
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.776 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.1866 -0.4209 -95.3894
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.776 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.0175 0.6050 -98.9038
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.604 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.6102 2.1499 -100.1070
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.604 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.0511 0.3626 -100.8890
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.604 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.8291 0.9830 -102.7770
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.433 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.4399 -0.6286 -103.7920
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.433 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.6438 0.9252 -104.7680
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.433 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.2102 2.0589 -107.6470
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.461 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.9626 0.9553 -108.7540
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.461 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.8282 0.9180 -106.7590
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.461 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.0099 0.8672 -110.7520
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.633 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.1113 -0.9289 -111.6260
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.633 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.0890 0.7283 -112.7450
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.633 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.8707 -0.9197 -115.7360
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.805 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.9733 0.8059 -116.7420
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.805 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.0468 0.8076 -114.7430
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.805 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.1607 -0.5960 -119.5060
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.923 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.4285 0.4277 -120.6650
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.923 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.4379 0.7057 -118.6850
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.923 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.2890 -0.9047 -123.7940
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.751 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.6838 0.6128 -122.6400
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.751 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.6744 0.8045 -124.6310
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.751 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.4871 1.3625 -126.5420
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.579 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.4541 1.2617 -128.5400
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.579 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.2024 1.3092 -127.5700
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.579 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.9481 -0.2358 -131.4100
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.407 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.4494 0.6801 -130.4530
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.407 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.4005 0.4957 -132.4440
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.407 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.3074 0.0498 -136.4050
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.486 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.0082 0.7843 -135.6510
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.486 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.5144 0.2645 -134.4270
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.486 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.7187 -0.4332 -140.3510
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.658 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.2767 0.7023 -139.5560
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.658 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.5618 -0.2612 -138.3640
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.658 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.8870 -0.1261 -144.3270
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.830 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.5135 0.4619 -143.3220
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.830 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.9308 -0.2546 -142.3310
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.830 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.3122 0.1734 -148.2480
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.898 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.4394 -1.2191 -147.3590
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.898 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.3786 0.0652 -146.2520
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.898 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.3590 0.4942 -152.2250
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.726 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.3647 0.4697 -150.2250
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.726 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.5440 -1.2403 -151.2460
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.726 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.5023 0.4619 -156.2200
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.554 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.1867 -1.0654 -155.1250
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.554 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.3892 0.5323 -154.2240
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.554 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.6800 0.3085 -158.2060
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.382 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.4577 0.3726 -159.1200
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.382 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.7796 0.2677 -160.2030
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.382 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.1771 0.2922 -162.1630
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.511 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.0961 0.2053 -164.1590
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.511 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.6784 1.0321 -163.2580
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.511 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.4350 -0.2606 -166.0740
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.683 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.3962 -1.6553 -167.0620
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.683 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.7202 -0.5168 -168.0370
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.683 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.1686 -1.7062 -170.9470
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.855 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.7505 -0.6311 -170.0340
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.855 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.7979 -0.7336 -172.0310
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.855 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.3902 -1.5494 -174.9150
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.873 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.7172 -0.9163 -174.0210
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.873 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.8650 -0.8677 -176.0150
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.873 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.4520 -2.6347 -178.9310
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.701 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.8329 -0.9701 -178.0120
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.701 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.9652 -1.0201 -180.0070
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.701 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.1612 -1.0501 -181.9970
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.529 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.1076 -0.8661 -183.9880
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.529 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.9741 0.5522 -182.8750
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.529 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.5252 -2.8162 -186.8600
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.365 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.3836 -1.0351 -185.9610
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.365 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.2025 -1.1699 -187.9490
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.365 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.3823 -1.8221 -191.8850
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.537 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.1879 -1.5235 -189.9170
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.537 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.7669 -2.5261 -190.6250
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.537 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.9745 -1.6995 -193.7910
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.708 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.6929 -0.2795 -195.0030
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.708 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.8921 -1.9416 -195.7750
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.708 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.2476 -0.5022 -198.7080
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.880 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.8674 -2.1657 -199.7510
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.880 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.9356 -2.2317 -197.7530
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.880 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.9475 -2.0943 -201.7480
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.848 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 5.5556 -2.7177 -202.7610
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.848 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.8775 -2.2461 -203.7410
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.848 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.2652 -2.3629 -205.7000
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.676 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.3072 -2.5116 -207.6940
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.676 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.3499 -0.9857 -206.8250
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.676 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 5.5126 -4.0127 -210.5500
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.504 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.1385 -3.0485 -211.6380
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.504 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.1078 -2.9165 -209.6420
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.504 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.0265 -2.7052 -214.4690
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.390 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.7530 -3.1004 -213.5400
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.390 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.6536 -3.1662 -215.5370
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.390 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.6400 -3.0801 -219.5050
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.562 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.6795 -4.3773 -218.3240
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.562 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.8099 -2.9381 -217.5170
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.562 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.2036 -1.3864 -222.5300
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.733 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.5739 -3.0934 -223.5040
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.733 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.6168 -3.0533 -221.5050
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.733 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 6.2363 -3.0373 -226.4200
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.905 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.5570 -2.8350 -227.4870
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.905 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.4607 -3.0358 -225.5000
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.905 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 6.5930 -3.9306 -230.3680
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.823 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.8707 -3.5764 -231.3210
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.823 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.9348 -3.5337 -229.3230
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.823 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.9607 -3.6641 -235.2910
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.651 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.8408 -2.0216 -234.1560
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.651 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.8044 -3.8306 -233.3040
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.651 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.6603 -3.3957 -239.2600
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.479 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.6284 -4.7975 -238.2750
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.479 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.9161 -3.6265 -237.2900
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.479 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.4605 -3.8047 -241.2080
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.415 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 5.9053 -2.8790 -242.2350
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.415 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.4397 -3.8310 -243.2080
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.415 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.4633 -4.0382 -245.1970
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.587 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.5678 -2.4492 -246.0170
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.587 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.3623 -3.8638 -247.1860
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.587 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.4599 -3.6463 -249.1720
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.759 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.0080 -2.0945 -250.3500
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.759 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.6564 -3.8062 -251.1560
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.759 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.7406 -3.3889 -253.1100
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.930 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.6720 -3.3127 -255.1080
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.930 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 6.4339 -3.4581 -254.1720
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.930 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 5.1377 -3.3670 -257.0520
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.798 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 5.0265 -3.4389 -259.0470
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.798 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 6.5815 -2.5435 -258.1640
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.798 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 6.6635 -3.5170 -262.1210
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.626 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.8959 -3.3577 -263.0440
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.626 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.9786 -3.4369 -261.0470
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.626 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.8340 -3.3764 -265.0430
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.454 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.9153 -3.3928 -267.0410
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.454 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 6.1491 -2.2124 -265.9990
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.454 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.6156 -3.4769 -269.0160
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.440 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.1987 -2.3816 -269.9070
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.440 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.6602 -3.2032 -270.9970
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.440 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.8749 -3.2451 -272.9850
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.612 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 5.0388 -3.2661 -274.9780
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.612 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.7469 -4.4919 -274.0680
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.612 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.4278 -3.5081 -276.8670
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.784 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.6704 -3.3350 -277.8060
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.784 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.3629 -3.4520 -278.8650
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.784 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.2374 -3.3209 -282.8570
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.945 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.6184 -4.9831 -281.9330
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.945 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.3557 -3.4608 -280.8650
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.945 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.4519 -5.1517 -285.7380
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.773 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.0912 -3.3962 -284.8500
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.773 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.2443 -3.4969 -286.8420
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.773 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 5.9099 -3.1861 -289.8510
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.601 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.2168 -3.5242 -288.8410
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.601 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.1548 -3.1760 -290.8100
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.601 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 5.0474 -4.7282 -293.7790
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.429 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.0648 -3.3090 -294.7900
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.429 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.9696 -3.3627 -292.7930
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.429 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.8954 -3.4429 -298.7800
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.465 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.0637 -3.3845 -296.7880
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.465 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.7375 -5.1273 -297.7130
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.465 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.6659 -3.1382 -302.7610
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.637 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 5.4390 -3.1917 -301.8380
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.637 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.7512 -3.2806 -300.7680
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.637 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.9650 -2.7257 -306.6930
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.809 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.8388 -2.6699 -304.6980
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.809 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 5.3469 -3.6455 -305.5780
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.809 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.9299 -2.7403 -308.6930
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.919 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.2710 -2.1764 -309.6580
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.919 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.9037 -2.6898 -310.6920
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.919 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.7075 -2.0543 -314.6250
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.748 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.5638 -3.8550 -313.7660
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.748 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.7859 -2.2218 -312.6330
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.748 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.6845 -2.0507 -316.6240
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.576 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.9055 -2.0549 -318.6120
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.576 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.1426 -1.5676 -317.8030
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.576 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.0911 -2.0661 -322.5710
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.404 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.2211 -2.2110 -320.5810
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.404 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.1965 -0.7062 -321.4090
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.404 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.0541 -2.1697 -324.5680
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.490 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.5943 -1.1713 -325.5020
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.490 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.9786 -2.1463 -326.5670
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.490 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.8496 -2.0162 -330.5610
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.662 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.8628 -2.0987 -328.5630
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.662 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.1574 -0.3531 -329.4940
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.662 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.8926 -2.0075 -334.5580
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.834 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.3468 -1.1358 -333.6360
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.834 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.7960 -1.9981 -332.5600
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.834 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.7769 -0.3633 -337.3400
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.894 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.2398 -2.0704 -336.4470
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.894 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.1898 -1.9261 -338.4420
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.894 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.2245 -1.7858 -342.4390
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.722 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.4526 -3.5267 -341.4810
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.722 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.2172 -1.8356 -340.4390
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.722 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.1996 -1.6297 -346.4340
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.551 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.2103 -1.7601 -344.4390
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.551 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.5078 -2.0407 -345.4500
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.551 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.9312 -0.4042 -349.4500
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.379 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.1434 -1.9216 -348.4120
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.379 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.9646 -1.8727 -350.4030
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.379 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.1487 -1.7439 -354.3950
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.515 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.3137 -0.5401 -353.3020
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.515 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.1056 -1.8529 -352.3980
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.515 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.0264 -1.3350 -356.3490
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.687 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.7144 0.4092 -357.2760
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.687 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.1531 -1.2255 -358.3420
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.687 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.6630 -0.9612 -362.2960
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.859 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.9295 -1.2044 -360.3290
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.859 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 4.4960 -1.2950 -361.5690
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.859 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.2595 -1.1264 -366.2530
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.869 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.3125 -1.1684 -364.2540
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.869 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.5020 0.5709 -365.2240
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.950 0.869 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.0901 -1.0315 -368.2440
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.697 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.4374 -1.3663 -369.3190
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.697 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.1733 -0.9980 -370.2420
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.697 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.6792 0.6693 -373.2030
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.526 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.0379 -1.0069 -374.2330
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.526 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.2187 -0.9993 -372.2410
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.526 0.361 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.1104 -1.3232 -376.2070
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.368 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.1133 -1.3906 -378.2060
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.368 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 0.4884 -1.9602 -377.1880
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.368 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.7473 -0.9110 -382.0790
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.540 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 3.2356 -0.4535 -380.8240
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.540 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.5593 -1.2906 -380.1250
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.950 0.361 0.540 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.3817 -2.2508 -384.9900
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.712 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.3522 -0.8210 -383.9830
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.712 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.4527 -0.8822 -385.9800
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.361 0.712 0.950 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 1.0749 -1.9266 -388.7350
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.884 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.1825 -0.7341 -389.8980
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.884 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+    Pose {
+      translation 2.1690 -0.4669 -387.9160
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.884 0.950 0.361 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 1.0000 subdivision 2 }
+        }
+      ]
+    }
+  ]
+  name "reactivebuild_chain"
+}

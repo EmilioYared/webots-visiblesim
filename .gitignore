@@ -1,0 +1,10 @@
+# --- ReactiveBuild replication ---
+# Python oracle
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+reactivebuild/results/*
+!reactivebuild/results/.gitkeep
+# C++ build artifacts
+reactivebuild/cpp/.build/
