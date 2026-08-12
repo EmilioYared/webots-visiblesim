@@ -35,6 +35,7 @@ The script uses Webots' bundled MinGW g++ and the Eigen headers vendored at
 - **Phase 8** `reactivebuild/viz_webots/export_wbt.py` → static `worlds/reactivebuild_*.wbt` for viewing in Webots (environment-aware ground: `--edge` for the chain void, `--gap` for the bridge).
 - **Phase 9** [`../RESULTS.md`](../RESULTS.md) — honest scorecard vs the paper.
 - **Phase 10** `climbing.hpp` `dock_climb` — full-orientation **docking** climber (samples all of SO(3), keeps the penetration-free dock closest to the goal). Closes the **chain** (sustained descent, was a ~9-robot stall) and wires the **bridge** (`Simulator::runBridge`: two arms dock toward each other from opposite lips, span-detected on latch). `apps/rb_bridge.cpp` sweeps the gaps. (`test_climbing` 28, `test_simulator` 59)
+- **Phase 11** `catom3d_fem.hpp` — domain transfer: the **same validated truss-FEM** applied to **Catoms3D** lattices (each module a rigid tetra, each bond a 16-bar moment-transmitting bundle). `catom3d_forces()` reports per-bond tensile/shear utilisation + an equilibrium self-check. `apps/catom3d_forces.cpp` bridges the controller's FCC geometry (`gridToWorld`/`fccNeighbor`) to it; `analysis/catom3d_forces.py` draws it. This is the statics oracle that runs *alongside* the Webots/ODE controller (which drives the movement). (`test_catom3d` 21)
 
 ## Run the tower demo / experiments
 
@@ -45,6 +46,9 @@ bash reactivebuild/cpp/build_and_run_app.sh rb_experiment tower 5 3 5 100 30 100
 bash reactivebuild/cpp/build_and_run_app.sh rb_experiment chain 5 3 5 100 1 4000   # docking climber
 # bridge runner: sweeps gaps {20,25,30}:  rb_bridge [runs] [seed_base]
 bash reactivebuild/cpp/build_and_run_app.sh rb_bridge 10 2000
+# Catoms3D internal-force analysis (validated FEM applied to an FCC structure):
+bash reactivebuild/cpp/build_and_run_app.sh catom3d_forces cantilever   # or a <cells.csv>
+python -m reactivebuild.analysis.catom3d_forces                         # draw it
 ```
 Then analyse (reads the CSVs, writes figures to `reactivebuild/results/`):
 ```bash

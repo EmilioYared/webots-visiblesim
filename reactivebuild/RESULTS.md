@@ -160,6 +160,24 @@ Regenerate: `python -m reactivebuild.viz_webots.export_wbt <positions.csv> world
 (add `--edge 0` for the chain, `--gap 30` for the bridge so voids render as voids).
 Quick non-Webots previews (matplotlib 3-D): `fig_view_tower.png`, `fig_view_cantilever.png`.
 
+## Applying the validated engine to Catoms3D (domain transfer)
+The point of reproducing the paper is to trust the **statics** engine — the force/stress analysis
+ODE gets wrong (the "popcorn" instability). `catom3d_fem.hpp` transfers the *same* validated
+truss-FEM to Catoms3D lattices: each module is a rigid tetra, each bond a 16-bar bundle that
+transmits force **and** moment (a single node/bond would make a thin arm a pin-jointed mechanism).
+`apps/catom3d_forces.cpp` turns the controller's FCC cells (`gridToWorld`/`fccNeighbor`) into that
+truss and reports, per bond, the tensile/shear **utilisation** vs the scene's real limits (15 N /
+10 N). It runs **alongside** the Webots/ODE controller (which drives the movement); it does not
+move anything.
+
+On the built-in cantilever scenario (2×2×3 pedestal + 8-cell arm): the solve is in exact static
+equilibrium (support reaction +19.62 N = total weight), and the **most-loaded bond is the arm
+root** (159 % of the tensile limit — 3 bonds predicted to break), precisely where `scenario.hpp`
+documents the failure. `test_catom3d` (21 checks) locks in equilibrium and mechanism detection.
+Regenerate: `catom3d_forces cantilever` then `python -m reactivebuild.analysis.catom3d_forces`.
+A shareable side-by-side of the paper vs our engine (incl. this analysis) is built by
+`python -m reactivebuild.analysis.build_showcase` → `results/showcase.html`.
+
 ## Bottom line
 The **simulator, algorithm, FEM, sensing, and analysis pipeline are complete and correct**
 (203 physics/algorithm checks cross-validated vs the frozen Python oracle; 268 C++ checks
